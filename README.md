@@ -1,13 +1,21 @@
 # PoE Bulk Shopper
 
-Chrome extension for the [Path of Exile trade site](https://www.pathofexile.com/trade). It adds a floating widget that scrolls through search results until it finds the first seller with **two or more listings**, then clicks their **Direct Whisper** trade button.
+Chrome extension for the [Path of Exile trade site](https://www.pathofexile.com/trade). It adds a floating widget with several utilities for improving your trade experience, including: 
+
+1. Bulk Search: searching for users with multiple listings
+2. Auto-trade: enable with a live-search active to instantaneously click "travel to hideout" as soon as results appear
+3. Saved searches: save and load pre-configured searches
 
 ## Install (unpacked)
+
+***DISCLAIMER***
+As a general rule, you should not load random unpacked extensions. They have the potential to alter your computer's behavior on websites in ways you may not anticipate, even leading to compromise of data. Do not follow these steps for any code you do not personally understand. In order to minimize the "scary factor" of this extension, it only has access to appear specifically on the trade portions of the pathofexile website. 
 
 1. Open Chrome and go to `chrome://extensions`
 2. Enable **Developer mode** (top right)
 3. Click **Load unpacked**
 4. Select this folder (`bulk-shopper`)
+
 
 ## Bulk Search
 
@@ -37,5 +45,8 @@ Use **Stop** to cancel a scan in progress. Click the hammer button to collapse o
 ## Tips
 
 - Turn **Collapse Listings by Account** **off** in search settings so multiple listings from the same seller appear as separate rows. The extension counts distinct rows per account name.
-- You must be logged in to the trade site for Auto-Trade to work.
+- Auto-trade is not fast enough to compete with full-on bots. There might be some optimization possible, but as of now, I suspect a bigger limitation is just server distance. You will still arrive/click before the vast majority of human shoppers.
+- When using auto-trade, if your items are in high demand, consider turning your graphical and audio settings down as low as possible, to minimize hideout load time. 
+- For bulk trade, the "2+ listings" rule may not always work. I suggest setting a minimum price a bit **above** the current cheapest listings. Also feel free to tweak that MIN_LISTINGS variable in bulk-find.js
+- You must be logged in to the trade site for Auto-Trade/Bulk search to work.
 - Works on both PoE 1 (`/trade`) and PoE 2 (`/trade2`) trade pages.
