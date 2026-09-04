@@ -15,7 +15,7 @@ ShoppingTools.widget = {
     widget.innerHTML =
     '<button type="button" class="bs-toggle" id="bulk-shopper-toggle" title="Toggle Shopping Tools">⚒</button>' +
       '<div class="bs-panel">' +
-        '<div class="bs-title">Shopping Tools (' + extensionVersion + ')</div>' +
+        '<div class="bs-title">Tustin\'s Tools (' + extensionVersion + ')</div>' +
         '<div class="bs-status" id="bulk-shopper-status">Ready. Run a trade search first.</div>' +
         '<div class="bs-actions">' +
           '<button type="button" class="bs-find-btn" id="bulk-shopper-find">Find 2+ Listings</button>' +
