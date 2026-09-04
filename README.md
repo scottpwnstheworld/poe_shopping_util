@@ -14,7 +14,7 @@ As a general rule, you should not load random unpacked extensions. They have the
 1. Open Chrome and go to `chrome://extensions`
 2. Enable **Developer mode** (top right)
 3. Click **Load unpacked**
-4. Select this folder (`bulk-shopper`)
+4. Select this folder (`poe_shopping_util`)
 
 
 ## Bulk Search
