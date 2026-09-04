@@ -1,0 +1,156 @@
+#bulk-shopper-widget {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 100000;
+  font-family: "Optimus", "Fontin SmallCaps", "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#bulk-shopper-widget .bs-panel {
+  background: rgba(12, 12, 14, 0.92);
+  border: 1px solid rgba(160, 130, 70, 0.55);
+  border-radius: 6px;
+  padding: 10px 12px;
+  min-width: 260px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  color: #d4c4a0;
+}
+
+#bulk-shopper-widget .bs-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #c9a962;
+  margin-bottom: 6px;
+}
+
+#bulk-shopper-widget .bs-status {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #b8b0a0;
+  min-height: 1.4em;
+}
+
+#bulk-shopper-widget .bs-status.bs-success {
+  color: #7ecf7e;
+}
+
+#bulk-shopper-widget .bs-status.bs-error {
+  color: #e07a7a;
+}
+
+#bulk-shopper-widget .bs-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#bulk-shopper-widget button {
+  cursor: pointer;
+  border: 1px solid rgba(160, 130, 70, 0.65);
+  border-radius: 4px;
+  background: linear-gradient(180deg, #3a3428 0%, #2a241c 100%);
+  color: #e8dcc0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+#bulk-shopper-widget button:hover:not(:disabled) {
+  background: linear-gradient(180deg, #4a4234 0%, #342e24 100%);
+  border-color: #c9a962;
+  color: #fff3d6;
+}
+
+#bulk-shopper-widget button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+#bulk-shopper-widget .bs-find-btn,
+#bulk-shopper-widget .bs-arm-btn,
+#bulk-shopper-widget .bs-save-btn {
+  flex: 1;
+}
+
+#bulk-shopper-widget .bs-load-select {
+  flex: 2;
+  min-width: 0;
+  cursor: pointer;
+  border: 1px solid rgba(160, 130, 70, 0.65);
+  border-radius: 4px;
+  background: linear-gradient(180deg, #3a3428 0%, #2a241c 100%);
+  color: #e8dcc0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 8px;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+#bulk-shopper-widget .bs-delete-btn {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  background: linear-gradient(180deg, #4a2828 0%, #321818 100%);
+  border-color: rgba(180, 80, 80, 0.55);
+}
+
+#bulk-shopper-widget .bs-delete-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, #5a3030 0%, #401f1f 100%);
+  border-color: #c97070;
+  color: #ffe0e0;
+}
+
+#bulk-shopper-widget .bs-arm-btn.bs-armed-btn {
+  background: linear-gradient(180deg, #2a4a2a 0%, #1c321c 100%);
+  border-color: rgba(90, 180, 90, 0.7);
+  color: #c8f0c8;
+  box-shadow: 0 0 10px rgba(80, 180, 80, 0.35);
+}
+
+#bulk-shopper-widget .bs-arm-btn.bs-armed-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, #325832 0%, #244024 100%);
+  border-color: #7ecf7e;
+  color: #e8ffe8;
+}
+
+#bulk-shopper-widget.bs-armed .bs-panel {
+  border-color: rgba(90, 180, 90, 0.65);
+}
+
+#bulk-shopper-widget.bs-armed .bs-title::after {
+  content: " · ARMED";
+  color: #7ecf7e;
+}
+
+#bulk-shopper-widget .bs-stop-btn {
+  background: linear-gradient(180deg, #4a2828 0%, #321818 100%);
+  border-color: rgba(180, 80, 80, 0.55);
+}
+
+#bulk-shopper-widget .bs-stop-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, #5a3030 0%, #401f1f 100%);
+  border-color: #c97070;
+  color: #ffe0e0;
+}
+
+#bulk-shopper-widget .bs-toggle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+#bulk-shopper-widget.bs-collapsed .bs-panel {
+  display: none;
+}

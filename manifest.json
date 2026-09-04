@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Tustin's Shopping Tools",
+  "version": "1.0.13",
+  "description": "Tools for shopping in Path of Exile. Search tool for multiple listings, and autoclick tool for live searches.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.pathofexile.com/trade*",
+        "https://www.pathofexile.com/trade2*"
+      ],
+      "js": [
+        "src/namespace.js",
+        "src/dom.js",
+        "src/bulk-find.js",
+        "src/live-arm.js",
+        "src/saved-searches.js",
+        "src/widget.js",
+        "src/main.js"
+      ],
+      "css": ["widget.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
